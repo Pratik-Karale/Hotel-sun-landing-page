@@ -1,0 +1,137 @@
+body{
+    margin: 0;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#title,#features,#contact-us{
+    padding: 12% 2%;
+}
+
+
+/* Navbar */
+nav{
+    text-align: justify;
+    padding: 3%;
+    position: absolute;
+    width: 90vw;
+    letter-spacing: 2px;
+}
+
+nav ul{
+    display: inline-block;
+    margin: 0;
+    position: absolute;
+    right: 10px;
+}
+nav li{
+    display: inline-block;
+}
+nav a{
+    color: skyblue;
+    text-decoration: none;
+    font-weight: bold;
+}
+nav a:hover{
+    color: rgb(122, 186, 211);
+    text-decoration: underline;
+}
+#logo{
+    width: 8%;
+    position: absolute;
+}
+
+
+/* Title section  */
+#title{
+    background-image: url(imgs/title-bg.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: whitesmoke;
+}
+
+#title h1{
+    font-size: 4rem;
+}
+
+#tile h3{
+    font-weight: lighter;
+}
+
+
+#features img{
+    width: 100%;
+    height: 50%;
+}
+.feature-box{
+    text-align: left;
+    display: inline-block;
+    margin: 0 5%;
+    width: 200px;
+    height: 200px;
+    /* margin: 0 10%; */
+}
+#features h2{
+    margin-bottom: 1.5rem;
+    color: rgb(22, 156, 209);
+}
+
+
+#contact-us{
+    background-image: url(imgs/title-bg.jpg);
+    background-attachment: fixed;
+    padding: 3%;
+}
+
+#contact-us h3{
+    color: #fff;
+}
+
+#contact-us p{
+    background-color: #fff;
+    color: skyblue;
+    width: 20%;
+    border-radius: 15px;
+    padding: 2.5%;
+    display: inline-block;
+    text-align: left;
+}
+
+
+
+@media (min-width:1600px){
+    nav li{
+        display: block;
+        margin: 5% 0;
+        font-size: 1.5rem;
+    }
+    #title{
+        background-repeat: repeat;
+    }
+    #feature-box{
+        width: 20%;
+    }
+}
+@media (max-width:902px){
+    #logo{
+        width: 55px;
+    }
+    .feature-box{
+        margin: 2.5% 5%;
+    }
+    #contact-us p{
+        width: 65%;
+    }
+}
+@media(max-width:320px){
+    nav li{
+        display: block;
+    }
+    nav ul{
+        list-style: none;
+    }
+    #contact-us p{
+        width: 95%;
+    }
+    
+}
